@@ -8,18 +8,20 @@
 </head>
 <body>
 <div>
-<form><fieldset>
+<form action="/submit" method="post"><fieldset>
 <legend>
 <h1>Food Donation Form</h1>
 </legend>
 
 <div>
-Name of the organization or Institute: <input type="text">
+<span>Name of the organization or Institute:</span> 
+<input type="text" name="orgname">
 </div>
 <br>
 <div>
-Quantity of food available:
-<select name="drop-down">
+    <span>Quantity of food available:</span>
+
+<select name="food-quantity">
 <option value="0">Less than 20 people</option>
 <option value="1">25-50 people</option>
 <option value="2">50-100 people</option>
@@ -32,21 +34,25 @@ Quantity of food available:
 </div>
 <br>
 <div>
-Name of person donating food: <input type="text">
+    <span>Name of person donating food: </span>
+<input type="text" name="personname">
 </div>
 <br>
 <div>
-Contact number of the person: <input type="number">
+    <span>Contact number of the person:</span>
+ <input type="number" name="contact">
 </div>
 <br>
 
 <div>
-Email id : <input type="email">
+    <span>Email id: </span>
+<input type="email" name="email">
 </div>
 <br>
 <div>
-Name of the charity:
-<select name="drop-down">
+    <span>Name of the charity:</span>
+
+<select name="charity-name" class="dropdown">
 <option value="0">Safe Chennai Orphanage,Adayar</option>
 <option value="1">Child safe Orphanage,Avadi</option>
 <option value="2">Elder Orphanage,Villivakkam</option>
@@ -55,36 +61,39 @@ Name of the charity:
 <option value="5">Cauvery charity trust,Adayar</option>
 <option value="6">Hari trust,Korattur</option>
 <option value="7">Radha Elder Orphanage,OMR</option>
-
-</div>
-<br>
-<div>
-Reason for donating food: <input type="text">
-</div>
-<br>
-
-<div>
-Transport Required:
-<select name="drop-down">
-<option value="Delivery van">Delivery Van</option>
-<option value="car">Car</option>
-<option value="Refrigerated Trucks">Bulk Carriers</option>
-<option value="cargo vans">Cargo Vans</option>
-<option value="Box Trucks">Box Trucks</option>
-<option value="Motorcycles">Motorcycles</option>
-<option value="Tanker Trucks">Tanker Trucks</option>
 </select>
 </div>
 <br>
 <div>
-Member of this NGO:
-YES<input type="radio">
-No<input type="radio">
+    <span>Reason for donating food:</span>
+ <input type="text" name="reason">
+</div>
+<br>
+
+<div>
+    <span>Transport Required:</span>
+
+<select name="transport-required">
+<option value="0">Delivery Van</option>
+<option value="1">Car</option>
+<option value="2">Bulk Carriers</option>
+<option value="3">Cargo Vans</option>
+<option value="4">Box Trucks</option>
+<option value="5">Motorcycles</option>
+<option value="6">Tanker Trucks</option>
+</select>
 </div>
 <br>
 <div>
-<input type="submit" value="submit">
-<input type="reset" value="reset">
+    <span>Member of this NGO:</span>
+
+YES<input type="radio" name="ngomember" value="yes">
+No<input type="radio" name="ngomember" value="no">
+</div>
+<br>
+<div>
+<input type="submit" value="submit" class="btn">
+<input type="reset" value="reset" class="btn">
 </div>
 </fieldset>
 </form>
