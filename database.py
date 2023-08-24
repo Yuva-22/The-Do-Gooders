@@ -64,7 +64,7 @@ def createTable():
                 EMAIL VARCHAR(100),
                 FOOD_QUANTITY VARCHAR(100),
                 CHARITY_NAME VARCHAR(100),
-                TRANSPORT VARCHAR(10),
+                TRANSPORT VARCHAR(20),
                 NGO_MEMBER VARCHAR(5)
             )
             """

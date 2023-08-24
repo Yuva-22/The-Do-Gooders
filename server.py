@@ -40,7 +40,7 @@ def login():
 @app.route('/donate')
 def donate():
     results = fetchData()
-    return render_template('fooddonate.html')
+    return render_template('fooddonate.html', results=results)
 
 @app.route('/submit', methods=['GET', 'POST'])
 def submit_form():

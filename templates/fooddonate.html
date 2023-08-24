@@ -97,6 +97,32 @@ No<input type="radio" name="ngomember" value="no">
 </div>
 </fieldset>
 </form>
+
+
+<br>
+<br>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>PERSON NAME</th>
+        <th>ORGANIZATION</th>
+        <th>CONTACT</th>
+        <th>EMAIL</th>
+        <th>FOOD QUANTITY</th>
+        <th>CHARITY NAME</th>
+        <th>TRANSPORT</th>
+        <th>NGO MEMBER</th>
+    </tr>
+    {% for row in results %}
+        <tr>
+            {% for col in row %}
+                <td>{{ col }}</td>
+            {% endfor %}
+        </tr>
+    {% endfor %}
+</table>
+
 </body>
 </html>
 
