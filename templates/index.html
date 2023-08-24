@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<head>
+  <title>HOME</title>
+  <link rel="shortcut icon" href="images/ngologo.jpg">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+
+  Bootstrap 3.4.1 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+  <!--PLUGIN-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+  <!--FONT AWESOME-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+  <!--GOOGLE FONTS-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fredoka+One&family=Kanit:wght@300&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  #2a2a72
+  <nav class="navbar navbar-default navbar-fixed-top " style="background-color:
+  #4033ff;padding-top:15px;padding-bottom:15px;">
+    <div class="container-fluid">
+      <div class="navbar-header" style="height:50px; width:auto;">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>     
+        </button>
+        <a class="navbar-brand" href="#"></a>
+        <img src="images/ngologo.jpg" height=50px width=auto style="border-radius: 50%;">
+      </div>
+      <div class="collapse navbar-collapse navbar-right" id="myNavbar" >
+      <ul class="nav navbar-nav navbar-right ">
+        <li><a href="{{ url_for('home') }}" style="color:white; font-family: 'Quicksand', sans-serif;font-size: 18px; font-weight: 250; padding: 15px 15px 15px 15px;"><b>HOME</b></a></li>
+        <li><a href="{{ url_for('aboutus') }}" style="color:white; font-family: 'Quicksand', sans-serif;font-size: 18px; font-weight: 250; padding: 15px 15px 15px 15px;"><b>ABOUT US</b></a></li>
+        <li><a href="{{ url_for('contactus') }}" style="color:white; font-family: 'Quicksand', sans-serif;font-size: 18px;font-weight: 250; padding: 15px 15px 15px 15px;"><b>CONTACT US</b></a></li>
+        <li><a href="{{ url_for('login') }}" style="color:white; font-family: 'Quicksand', sans-serif;font-size: 18px; font-weight: 250; padding: 15px 15px 15px 15px;"><b>LOGIN</b></a></li>
+        <li><a href="{{ url_for('donate') }}" style="color:white;font-family: 'quicksand',sans-serif;font-size:18px;font-weight:250;padding:15px 15px 15px 15px;"><b>FOOD DONATE</b></a></li>
+      </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--MAIN-->
+  <div class="main img-responsive">
+    <table>
+      <tr>
+        <td>
+          <section>
+      
+            <h1 class="title">THE DO GOODERS</h1>
+            <p>The Do Gooders,We help people who are in need..</p>
+          </section>
+        </td>
+        <td>
+          <img src="images/img1.jpg" class="inline-photo show-on-scroll" alt="INFERNO" id="homeimg">
+        </td>
+      </tr>
+    </table>
+  </div>
+
+
+  <!--CARDS-->
+  <section class="section0" id="sections">
+    <div class="card banner">
+      <h1 class="title">Our Featured Services</h1>
+      <h5 class="sub-title">The main aim of this trust is little and submitted gathering,THE DO GOODERS 
+        have made a begin by concentrating on the lives of the innate kids.</h5>
+    </div>
+    <div class="card inline-photo show-on-scroll">
+      <i class="fas fa-child"></i>
+      <h3>Child Welfare</h3>
+    </div>
+    <div class="card inline-photo show-on-scroll">
+      <i class="fas fa-female"></i>
+      <h3>Women Empowerment</h3>
+    </div>
+    <div class="card inline-photo show-on-scroll">
+      <i class="fas fa-school"></i>
+      <h3>Education</h3>
+    </div>
+    <div class="card inline-photo show-on-scroll">
+      <i class="fas fa-briefcase-medical"></i>
+      <h3>Free Health Checkups</h3>
+    </div>
+    <div class="card inline-photo show-on-scroll">
+      <i class="fa-solid fa-bowl-food"></i>
+      <h3>Food Transport</h3>
+    </div>
+  </section>
+
+
+  <!--CONTAINER-->
+  <div class="container">
+    <table>
+      <tr>
+        <td>
+          <img src="images/img2.jpg" class="inline-photo show-on-scroll" alt="About Us">
+        </td>
+        <td>
+          <h5 class="sub-title">Discover Our Organisation</h5>
+          <h1 class="title">We Serve Humanity</h1>
+          <p>The main aim of this trust is little and submitted gathering have made
+            a begin by concentrating on the lives of the innate kids.
+
+            Some of the programs experienced by the Do Gooders.
+            <li>
+              <ul>• Agriculture</ul>
+              <ul>• Child welfare</ul>
+              <ul>• Education</ul>
+              <ul>• Health</ul>
+              <ul>• Women Empowerment</ul>
+              <ul>• Old Age Welfare</ul>
+              <ul>• Skills Development</ul>
+              <ul>• Food Transport</ul>
+
+            </li>
+          </p>
+          <a href="#moreaboutus" class="btn2">Discover More</a>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+    <!-- Site footer -->
+    <footer class="site-footer">
+      <div class="container">
+
+          <div class="grid-container">
+              <div class="grid-item">
+
+                  <img src="images/ngologo.jpg" class="logo-img" style="border-radius: 50%;">
+
+              </div>
+
+              <div class="grid-item inner-grid-container">
+
+                <div class="grid-item"><a href="index.html">Home</a></div>
+                <div class="grid-item"><a href="">Our Projects</a></div>
+                <div class="grid-item"><a href="aboutus.html">Privacy Policy</a></div>
+                <div class="grid-item"><a href="login.html">Join Us</a></div>
+                <div class="grid-item"><a href="contactus.html">Contact Us</a></div>
+            </div>
+          </div>
+          <hr>
+
+          <p style="text-align: center;">Copyright © 2023 The Do Gooders| All rights reserved</p>
+
+      </div>
+  </footer>
+
+
+
+
+  <!--JAVASCRIPT-->
+  <script src="custom.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+  integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

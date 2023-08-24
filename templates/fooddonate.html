@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="{{ url_for('static', filename='fooddonate.css') }}">
+<title>Food Donation Form</title>
+
+</head>
+<body>
+<div>
+<form><fieldset>
+<legend>
+<h1>Food Donation Form</h1>
+</legend>
+
+<div>
+Name of the organization or Institute: <input type="text">
+</div>
+<br>
+<div>
+Quantity of food available:
+<select name="drop-down">
+<option value="0">Less than 20 people</option>
+<option value="1">25-50 people</option>
+<option value="2">50-100 people</option>
+<option value="3">100-200 people</option>
+<option value="4">200-300 people</option>
+<option value="5">300-400 people</option>
+<option value="6">400-500 people</option>
+<option value="7">500 above</option>
+</select>
+</div>
+<br>
+<div>
+Name of person donating food: <input type="text">
+</div>
+<br>
+<div>
+Contact number of the person: <input type="number">
+</div>
+<br>
+
+<div>
+Email id : <input type="email">
+</div>
+<br>
+<div>
+Name of the charity:
+<select name="drop-down">
+<option value="0">Safe Chennai Orphanage,Adayar</option>
+<option value="1">Child safe Orphanage,Avadi</option>
+<option value="2">Elder Orphanage,Villivakkam</option>
+<option value="3">Amirtha Orphanage,Redhills</option>
+<option value="4">Nanda Orphanage,Ambattur</option>
+<option value="5">Cauvery charity trust,Adayar</option>
+<option value="6">Hari trust,Korattur</option>
+<option value="7">Radha Elder Orphanage,OMR</option>
+
+</div>
+<br>
+<div>
+Reason for donating food: <input type="text">
+</div>
+<br>
+
+<div>
+Transport Required:
+<select name="drop-down">
+<option value="Delivery van">Delivery Van</option>
+<option value="car">Car</option>
+<option value="Refrigerated Trucks">Bulk Carriers</option>
+<option value="cargo vans">Cargo Vans</option>
+<option value="Box Trucks">Box Trucks</option>
+<option value="Motorcycles">Motorcycles</option>
+<option value="Tanker Trucks">Tanker Trucks</option>
+</select>
+</div>
+<br>
+<div>
+Member of this NGO:
+YES<input type="radio">
+No<input type="radio">
+</div>
+<br>
+<div>
+<input type="submit" value="submit">
+<input type="reset" value="reset">
+</div>
+</fieldset>
+</form>
+</body>
+</html>
+
+
+
+
