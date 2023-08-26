@@ -212,6 +212,7 @@
     
     .main table td{
     width:50%;
+    background-color: white;
     }
     
     .main table td img{
@@ -242,11 +243,18 @@
     color:#fff;
     }
     
-    .main table td section .sub-title,.main table td section p{
-    color:rgb(180, 205, 255);
+   .main table td section p{
+    color:#4033ff;
     margin: 30px;
     font-size: medium;
     font-weight: 400;
+    }
+    .main table td section .title{
+      color:#4033ff;
+      margin: 30px;
+      font-size: medium;
+      font-weight: 700;
+      font-family:'Cookie',cursive;
     }
     
     @media (max-width:600px){
